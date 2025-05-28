@@ -5,65 +5,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Souma Kanti De - Professional Biodata</title>
   <style>
+    :root {
+      --primary-color: #2563eb;
+      --text-color: #333;
+      --bg-color: #f9fbfd;
+      --white: #fff;
+    }
+
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9fbfd;
-      color: #333;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       line-height: 1.6;
     }
+
     .container {
       max-width: 960px;
       margin: 30px auto;
-      background-color: #ffffff;
+      background-color: var(--white);
       padding: 40px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       color: #1f2937;
       font-size: 28px;
       margin-bottom: 10px;
+      text-align: center;
     }
+
     h2 {
-      color: #2563eb;
+      color: var(--primary-color);
       font-size: 20px;
       border-bottom: 2px solid #cbd5e1;
       padding-bottom: 5px;
       margin-top: 30px;
     }
+
     .info-line {
       font-size: 14px;
       margin-bottom: 6px;
     }
+
     ul {
-      padding-left: 18px;
+      padding-left: 20px;
     }
+
     ul li {
       margin-bottom: 6px;
     }
+
     p {
       margin: 10px 0;
     }
+
     .section {
       margin-bottom: 25px;
     }
+
     .download-btn {
       display: block;
-      width: fit-content;
       margin: 30px auto 0;
-      padding: 10px 20px;
-      background-color: #2563eb;
+      padding: 12px 24px;
+      background-color: var(--primary-color);
       color: white;
       border: none;
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
-      text-align: center;
+      transition: background-color 0.3s ease;
     }
+
     .download-btn:hover {
       background-color: #1d4ed8;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 20px 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .download-btn {
+        width: 100%;
+        font-size: 15px;
+      }
+
+      .info-line {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      .download-btn {
+        padding: 10px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
